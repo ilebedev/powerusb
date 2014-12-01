@@ -184,7 +184,7 @@ class PowerUSBStrip(object):
 
     def all_off(self):
         self.write(PowerUSBStrip._ALL_PORT_OFF)
-        time.sleep(PowerUSBStri._sleep_duration)
+        time.sleep(PowerUSBStrip._sleep_duration)
 
     def reset(self):
         self.write(PowerUSBStrip._RESET_BOARD)
@@ -200,7 +200,7 @@ class PowerUSBStrip(object):
     @overload.setter
     def overload(self, ol):
         self.write(int(ol))
-        time.sleep(PowerUSBStri._sleep_duration)
+        time.sleep(PowerUSBStrip._sleep_duration)
 
         
         
